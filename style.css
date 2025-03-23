@@ -1,12 +1,67 @@
-* {
+:root {
+    --background-color: #163b3b;
+    --text-color: #e2f4f0;
+    --header-footer-color: #092011;
+    --text-hover: #EA8C84;
+    --primary-font: 'Nunito', sans-serif;
+    --secondary-font: 'Gidole', sans-serif;
+}
+
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Gidole', sans-serif;
-
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    color: var(--text-color)   ;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Nunito', sans-serif;
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 85vh;
+    padding: 0 5%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+}
+
+nav {
+    display: flex;
+    /* gap: 15rem; */
+    align-items: center;
+    justify-content: left;
+    background-color: var(--header-footer-color);
+    height: 100px;
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+}
+
+.menu {
+
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: var(--text-hover);
+}
+
+.logo {
+    width: 100px;
+}
