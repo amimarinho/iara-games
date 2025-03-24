@@ -2,25 +2,20 @@
     --background-color: #163b3b;
     --text-color: #e2f4f0;
     --header-footer-color: #092011;
-    --text-hover: #EA8C84;
+    --text-hover: #ea8c84;
+    --search-color: #5d9e7b;
     --primary-font: 'Nunito', sans-serif;
     --secondary-font: 'Gidole', sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: var(--secondary-font);
     text-decoration: none;
-    color: var(--text-color)   ;
-}
-
-main {
-    background-color: var(--background-color);
     color: var(--text-color);
-    min-height: 85vh;
-    padding: 0 5%;
+    list-style: none;
 }
 
 h1,
@@ -34,34 +29,89 @@ h6 {
 
 nav {
     display: flex;
-    /* gap: 15rem; */
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     background-color: var(--header-footer-color);
-    height: 100px;
+    height: 120px;
     width: 100%;
     padding: 0 5%;
     position: fixed;
 }
 
 .menu {
-
-    list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
-    left: 40%;
     font-weight: 600;
     font-size: 1.2rem;
     font-family: var(--secondary-font);
     text-transform: uppercase;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: var(--text-hover);
 }
 
-.logo {
-    width: 100px;
+.menu ul{
+    display: flex;
+    gap: 3rem;
 }
+
+.logo {
+    position: absolute;
+    left: 120px;
+    width: 120px;
+}
+
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 0 150px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.search {
+    display: flex;
+    /* justify-content: center ; */
+    align-items: center;
+    color: #ea8c84;
+    border: 2px solid var(--header-footer-color);
+    background-color: var(--search-color);
+    width: 30%;
+    margin: 35px auto;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    outline: none;
+}
+
+#search::placeholder {
+    color: var(--text-color);
+}
+
+.search label{
+    /* height: 1.2rem; */
+}
+
+
+.hero{
+    margin: 0 auto;
+    width: 85%;
+    border-radius: 20px;
+}
+
+/* /* display: flex; */
