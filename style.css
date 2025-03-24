@@ -208,6 +208,11 @@ footer {
   width: fit-content;
 }
 
+.footer-menu a:hover
+{
+        color: var(--ligh-blue-color);
+}
+
 .footer-menu ul {
   display: grid;
   gap: 0.5rem;
