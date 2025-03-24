@@ -1,0 +1,228 @@
+:root {
+    --background-color: #163b3b;
+    --text-color: #e2f4f0;
+    --header-footer-color: #092011;
+    --text-hover: #ea8c84;
+    --search-color: #5d9e7b;
+    --ligh-blue-color: #77DAF3;
+    --color-1: #69A1C2;
+    --color-2: #2B5328;
+    --primary-font: 'Nunito', sans-serif;
+    --secondary-font: 'Gidole', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    color: var(--text-color);
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+}
+
+/* nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-footer-color);
+    height: 120px;
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* O flex wraap quebraria os items da lista pra linha debaixo quando não coubessem mais*/
+    /* justify-content: center; */ /* Aqui você pode usar space between, ai o logo sempre vai ficar no extremo oposto da lista */ 
+   gap: 24px; /* Adicionaria um gap mesmo assim pro caso de telas menores */
+    background-color: var(--header-footer-color);
+    height: 120px; /* Usaria min-height ao invés de height pra quando ele quebrar pra linha debaixo ele poder crescer */
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+}
+
+.menu {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    margin: 0 0 0 338px;
+}
+
+.menu a:hover {
+    color: var(--ligh-blue-color);
+}
+
+.menu ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    position: relative;
+    left: 45px;
+    width: 120px;
+}
+
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);    
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--header-footer-color);
+    background-color: var(--search-color);
+    width: 30%;
+    height: 60px;
+    margin: 35px auto 38px;
+    padding: 30px 15px 30px 30px;
+    border-radius: 50px;
+    gap: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.548) 0px 0px 10px 2px; */
+}
+
+.search button{
+    background-color: var(--header-footer-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#search {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    outline: none;
+}
+
+#search::placeholder {
+    color: var(--text-color);
+}
+
+
+.hero{
+    
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
+    /* box-shadow: var(--ligh-blue-color) 0px 0px 7px 3px; */
+    /* box-shadow: rgba(0, 0, 0, 0.548) 0px 0px 15px 6px; */
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 38px 0;
+    padding: 0 150px;
+    background-color: var(--color-2);
+}
+
+.main-container h2{
+    font-size: 2.5rem;
+    margin: 30px auto 20px;
+    text-transform: uppercase;
+}
+
+.news-container, .sale-container{
+    display: flex;
+    gap: 3.75rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.game-card{
+    width: 30%;
+    min-height: 360px;
+    min-width: 250px;
+    /* float: left; */
+    /* margin: 23px; */
+    /* background-color: hsl(116, 35%, 22%); */
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 0px 15px 2px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.game-card:hover{
+    box-shadow: var(--ligh-blue-color) 0px 0px 5px 2px;    
+    background-color: transparent;
+}
+
+.game-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.game-title{
+    font-size:2rem;
+    margin: 8px 0 16px -1px;
+    
+}
+
+.game-gender{
+    font-size: 1.2rem;
+
+    color: #e2f4f07c;
+}
+
+.game-price{
+    font-size: 1.2rem;
+    
+}
+
+footer{
+    background-color: var(--header-footer-color);
+    padding: 5% 5%;
+    height: 300px;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-menu ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.logo-footer {
+    position: absolute;
+    left: 120px;
+    width: 200px;
+}
