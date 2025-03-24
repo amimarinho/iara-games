@@ -226,3 +226,88 @@ footer{
     left: 120px;
     width: 200px;
 }
+
+
+/* jogo-page */
+
+    .jogo-page{
+        padding: 120px 120px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .jogo-page button{
+        background-color: var(--header-footer-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    }
+
+    .jogo-page-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 30px 0 0;
+        width: 50%;
+    }
+
+    .jogo-page-header h2{
+    font-size: 2.5rem;
+    }
+    .jogo-page-header p{
+    font-size: 1.5rem;
+    }
+
+    .container-jogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .game-img-page img{
+        height: 375px;
+        border-radius: 20px;
+    }
+
+    .game-info-page{
+        max-height: 375;
+        width: 33%;       
+        font-size: 1.3rem;
+    }
+
+    .game-info-page .game-info-page-desc{
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        margin: 0 0 30px;
+    }
+
+    .topics {
+        display: flex;
+        margin: 0.5rem 0;
+        gap: 0.5rem;
+    }
+
+    .topics dt{
+        font-weight: bold;
+    }
+
+    .container2{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    button:hover{
+        color: var(--ligh-blue-color);
+    }
+
+/* Fim jogo-page */

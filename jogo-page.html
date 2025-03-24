@@ -1,3 +1,5 @@
+<!-- Pagina modelo para todos os jogos -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -17,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Nome do Jogo</title>
+    <title>Enigma do Medo</title>
   </head>
   <body>
     <header>
@@ -31,60 +33,62 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <header>
-        <h2>Lorem ipsum dolor sit amet</h2>
+    <main class="jogo-page">
+      <header class="jogo-page-header">
+        <h2>Enigma do Medo</h2>
         <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
       </header>
-      <div>
-        <img src="https://placehold.co/620x350" alt="" />
-        <span> &hearts; </span>
+      <div class="container-jogo">
+        <div class="game-img-page">
+          <img src="./assets/img/enigma_do_medo.jpg" alt="" />
+          <!-- <span> &hearts; </span> -->
+        </div>
+        <div class="game-info-page">
+          <p class="game-info-page-desc">
+            Mia, uma detetive paranormal, busca seu pai desaparecido, que sumiu
+            enquanto investigava o Enigma do Medo. Em uma cidade sombria, ela
+            segue pistas enigmáticas, enfrentando monstros e revelando segredos.
+            A cada passo, o mistério se aprofunda e a presença de algo maligno a
+            persegue. Ela encontrará seu pai ou será consumida pela escuridão?
+          </p>
+          <dl class="topics">
+            <dt>Ultimas Avaliações:</dt>
+            <dd>230</dd>
+          </dl>
+
+          <dl class="topics">
+            <dt>Plataforma:</dt>
+            <dd>Windows</dd>
+          </dl>
+
+          <dl class="topics">
+            <dt>Data de lançamento:</dt>
+            <dd>15/01/2025</dd>
+          </dl>
+
+          <dl class="topics">
+            <dt>Desenvolvedor:</dt>
+            <dd>Ubisoft</dd>
+          </dl>
+          <p>
+            <span class="game-gender"> Ação e Aventura, </span>
+            <span class="game-gender"> RPG,</span>
+            <span class="game-gender"> Sci-fi </span>
+          </p>
+        </div>
       </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
-          reprehenderit? Recusandae fugiat ratione inventore aliquid voluptatum
-          perferendis aut quaerat laborum! Rerum sunt iure itaque beatae
-          commodi, nam quaerat corporis molestiae! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Inventore, reprehenderit? Recusandae
-          fugiat ratione inventore aliquid voluptatum perferendis aut quaerat
-          laborum! Rerum sunt iure itaque beatae commodi, nam quaerat corporis
-          molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Inventore, reprehenderit? Recusandae fugiat ratione inventore aliquid
-          voluptatum perferendis aut quaerat laborum! Rerum sunt iure itaque
-          beatae commodi, nam quaerat corporis molestiae!
-        </p>
-        <dl>
-          <dt>Ultimas Avaliações</dt>
-          <dd>230</dd>
-        </dl>
-
-        <dl>
-          <dt>Plataforma</dt>
-          <dd>Windows</dd>
-        </dl>
-
-        <dl>
-          <dt>Data de lançamento:</dt>
-          <dd>15/01/2025</dd>
-        </dl>
-
-        <dl>
-          <dt>Desenvolvedor:</dt>
-          <dd>Ubisoft</dd>
-        </dl>
-        <p>
-          <span> Ação e Aventura </span>
-          <span> RPG</span>
-          <span> Sci-fi </span>
-        </p>
+      <div class="container2">
         <button>Comprar Agora</button>
         <button>Adicionar ao carrinho</button>
       </div>
     </main>
     <footer>
-      <img src="https://placehold.co/40" alt="" />
-      <div>
+      <img
+        class="logo-footer"
+        src="./logo/Iara Games Logo V0 (IA).png"
+        alt=""
+      />
+      <div class="footer-menu">
         <h2>Jogos</h2>
         <ul>
           <li>Jogo A</li>
