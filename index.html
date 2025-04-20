@@ -17,198 +17,165 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Iara</title>
+    <title>Iara Games - A Maior plataforma de jogos brasileiros</title>
   </head>
 
   <body>
-    <header class="main-header">
-      <nav>
-        <img class="logo" src="./logo/Iara Games Logo V0 (IA).png" alt="" />
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#ultimos-lancamentos">Últimos Lançamentos</a></li>
-          <li><a href="#descontos-imperdiveis">Descontos Imperdíveis</a></li>
+    <nav role="navigation" class="nav">
+      <a href="#">
+        <img
+          class="logo"
+          src="./logo/logo-iara-games-60x60.png"
+          alt="Iara Games, atualizar página"
+          height="45"
+          width="45"
+        />
+      </a>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#ultimos-lancamentos">Lançamentos</a></li>
+        <li><a href="#descontos-imperdiveis">Ofertas</a></li>
+        <li class="btn"><a href="#descontos-imperdiveis">Criar conta</a></li>
+      </ul>
+    </nav>
+    <main class="layout">
+      <h1 class="heading">Iara Games</h1>
+      <header class="banner">
+        <a href="" class="banner-link">
+          <img src="https://placehold.co/700x438" alt="" class="banner-img" />
+        </a>
+        <a href="#" class="banner-link">
+          <img src="https://placehold.co/400x280" alt="" class="banner-img" />
+        </a>
+        <a href="#" class="banner-link">
+          <img src="https://placehold.co/240x140" alt="" class="banner-img" />
+        </a>
+        <a href="#" class="banner-link">
+          <img src="https://placehold.co/240x140" alt="" class="banner-img" />
+        </a>
+      </header>
+      <section class="releases">
+        <h2>Explore e descubra novos mundos</h2>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Irmão do Jorel e o Jogo mais importante da galáxia</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <button class="btn-cart">
+              R$ 49,90
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Adore</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <button class="btn-cart">
+              R$59,90
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Dandy Ace</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <button class="btn-cart">
+              R$ 39,00
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="search">
-        <label for="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </label>
-        <input type="text" name="search" id="search" placeholder="Pesquisar" />
-        <button>Buscar</button>
-      </div>
-      <img
-        class="hero"
-        src="./assets/img/ekorella_vol1.png"
-        alt="Arte promocional do jogo Ekorella"
-      />
-      <div class="main-container">
-        <!-- <div class="title"> -->
-        <h2 id="ultimos-lancamentos">Últimos Lançamentos</h2>
-        <!-- </div> -->
-        <div class="news-container">
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/enigma_do_medo.jpg"
-                alt="Arte promocional do jogo Enigma Do Medo"
-              />
-
-              <p class="game-gender details">Ação, Aventura, Indie</p>
-              <h3 class="game-title details">Enigma do Medo</h3>
-              <!-- <p
-                >Mia, uma detetive paranormal, busca seu pai desaparecido, que
-                sumiu enquanto investigava o Enigma do Medo. Em uma cidade
-                sombria, ela segue pistas enigmáticas, enfrentando monstros e
-                revelando segredos. A cada passo, o mistério se aprofunda e a
-                presença de algo maligno a persegue. Ela encontrará seu pai ou
-                será consumida pela escuridão?</p
-              > -->
-
-              <p class="game-price details">R$ 65,00</p>
-            </a>
-          </div>
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/adore.jpg"
-                alt="Arte promocional do jogo Adore"
-              />
-              <p class="game-gender">Género: Ação, Indie, RPG</p>
-              <h3 class="game-title">Adore</h3>
-              <!-- <p
-                >Adore é um emocionante jogo de ação e captura de criaturas,
-                onde você constrói uma equipe com criaturas únicas e poderosas.
-                Embarque em uma jornada épica para ressuscitar o Deus das
-                Criaturas, enfrentando desafios, desbloqueando habilidades
-                especiais e descobrindo segredos em um mundo vibrante e
-                dinâmico.</p
-              > -->
-              <p class="game-price">R$ 49,99</p>
-            </a>
-          </div>
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/irmao_do_jorel.jpg"
-                alt="Arte promocional do jogo Irmão do Jorel e o Jogo Mais Importante da Galáxia"
-              />
-              <p class="game-gender">Gênero: Aventura, Indie</p>
-              <h3 class="game-title">
-                Irmão do Jorel e o Jogo Mais Importante da Galáxia
-              </h3>
-              <!-- <p
-                >Irmão do Jorel e o Jogo Mais Importante da Galáxia é uma
-                divertida aventura point-and-click inspirada na premiada
-                animação brasileira Irmão do Jorel. Acompanhe um tímido garoto
-                de oito anos enquanto ele tenta sair da sombra de seu irmão mais
-                velho, o carismático e popular Jorel, enquanto lida com sua
-                família excêntrica em uma jornada cheia de humor e nostalgia.</p
-              > -->
-              <p class="game-price">R$ 49,99</p>
-            </a>
-          </div>
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/dandy_ace.jpg"
-                alt="Arte promocional do jogo Dandy Ace"
-              />
-              <p class="game-gender">Gênero: Ação, Indie</p>
-              <h3 class="game-title">Dandy Ace</h3>
-              <!-- <p>
-                Dandy Ace é um vibrante jogo de ação que acompanha um
-                carismático mágico em sua busca para combinar e utilizar cartas
-                mágicas, enfrentando inimigos e coletando tesouros. Sua missão é
-                derrotar o temível Ilusionista de Olhos Verdes e escapar de um
-                espelho amaldiçoado.
-              </p> -->
-              <p class="game-price">R$ 29,99</p>
-            </a>
-          </div>
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/mark_of_the_deep.jpg"
-                alt="Arte promocional do jogo Mark of the deep"
-              />
-              <p class="game-gender">Gênero: Ação, Aventura, Indie</p>
-              <h3 class="game-title">Mark of the deep</h3>
-              <!-- <p
-                >Mark of the Deep é uma épica aventura pirata com uma narrativa
-                envolvente, combinando elementos de Metroidvania e Souls-like.
-                Assuma o papel do pirata Rookie, desvende os mistérios de uma
-                ilha amaldiçoada e embarque em uma jornada perigosa para
-                encontrar sua tripulação desaparecida!</p
-              > -->
-              <p class="game-price">R$ 39,99</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- <div class="title"> -->
-        <h2 id="descontos-imperdiveis">Descontos imperdíveis</h2>
-        <!-- </div> -->
-
-        <div class="sale-container">
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/akane.jpg"
-                alt="Arte promocional do jogo Akane"
-              />
-              <p class="game-gender">Gênero: Ação, Casual, Indie</p>
-              <h3 class="game-title">Akane</h3>
-              <!-- <p
-                >2121 D.C. Sem escapatória, Akane se prepara para seu confronto
-                final nas ruas chuvosas e iluminadas por neon de Mega-Tóquio.
-                Akane é um arena arcade-slasher onde o objetivo é eliminar o
-                maior número possível de yakuzas, utilizando cortes rápidos e
-                disparos precisos em um combate onde um único golpe define a
-                vida ou a morte.</p
-              > -->
-              <p class="game-price">R$ 6,99</p>
-            </a>
-          </div>
-          <div class="game-card">
-            <a href="./jogo-page.html">
-              <img
-                class="game-img"
-                src="./assets/img/redo.jpg"
-                alt="Arte promocional do jogo redo"
-              />
-              <p class="game-gender">Gênero: Ação, Aventura</p>
-              <h3 class="game-title">Redo</h3>
-              <!-- <p
-                >REDO! é um jogo que acompanha a jornada de uma garota em busca
-                de outro ser humano em um mundo distópico dominado por
-                biomáquinas. Com uma atmosfera solitária e envolvente, o jogo
-                explora a ideia de desbravar o desconhecido e superar desafios
-                para descobrir o que ainda resta.</p
-              > -->
-              <p class="game-price">R$ 19,99</p>
-            </a>
-          </div>
-        </div>
-      </div>
+      </section>
+      <section class="releases bg-dark">
+        <h2>Descontos Imperdíveis</h2>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Redo</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+            </p>
+            <button class="btn-cart">
+              R$ 9,90
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Mark of the deep</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <button class="btn-cart">
+              R$19,90
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
+          <li class="card-list-item">
+            <img src="http://placehold.co/380x175" alt="" />
+            <h3>Ekorella</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <button class="btn-cart">
+              R$ 6,99
+              <i
+                aria-label="adicionar ao carrinho"
+                class="fa-solid fa-cart-plus"
+              ></i>
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>
-      <img
-        class="logo-footer"
-        src="./logo/Iara Games Logo V0 (IA).png"
-        alt=""
-      />
+    <footer class="footer">
+      <address class="footer-info">
+        <a href="#">
+          <img
+            class="footer-logo"
+            src="./logo/logo-iara-games-60x60.png"
+            alt="Iara Games - voltar para o topo"
+          />
+        </a>
+        <small>Iara Games - Jogos digitais</small>
+        <small>Brasil - BR</small>
+        <small>CNPJ: 25.815.481/0001-14</small>
+      </address>
       <div class="footer-menu">
-        <h2>Jogos</h2>
-        <ul>
+        <p><strong>Jogos</strong></p>
+        <ul class="footer-list">
           <li><a href="./jogo-page.html">Enigma do Medo</a></li>
           <li><a href="./jogo-page.html">Adore</a></li>
           <li><a href="./jogo-page.html">Irmão do Jorel</a></li>
@@ -216,6 +183,26 @@
           <li><a href="./jogo-page.html">Mark of the deep</a></li>
           <li><a href="./jogo-page.html">Akane</a></li>
           <li><a href="./jogo-page.html">Redo</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <p><strong>Redes sociais</strong></p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="" aria-label="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" aria-label="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" aria-label="facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
