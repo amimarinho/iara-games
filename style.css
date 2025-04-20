@@ -12,6 +12,9 @@
   --primary-font: "Nunito", sans-serif;
   --secondary-font: "Gidole", sans-serif;
 
+  --nav-size: 80px;
+  --spacing-size: 80px;
+
   font-family: var(--primary-font);
 }
 
@@ -41,6 +44,7 @@ html {
 }
 
 body {
+  width: 100%;
   background-color: var(--background-color);
 }
 
@@ -85,18 +89,19 @@ body {
 }
 
 .layout {
-  --nav-size: 80px;
-  --spacing-size: 80px;
   --cap-inline-size: 1060px;
 
   display: grid;
-  gap: 16px;
+  grid-template-columns: 1fr min(var(--cap-inline-size), 100%) 1fr;
+  row-gap: 16px;
   justify-content: center;
-  padding-inline: 90px;
+  padding-inline: 24px;
   padding-top: calc(var(--nav-size) + var(--spacing-size));
-  max-width: var(--cap-inline-size);
-  margin-inline: auto;
   color: var(--text-color);
+}
+
+.layout > * {
+  grid-column: 2;
 }
 
 .banner {
@@ -126,6 +131,16 @@ body {
   display: grid;
   gap: 24px;
   margin-top: 120px;
+}
+
+.releases > h2 {
+  text-align: center;
+}
+
+.releases.bg-dark {
+  grid-column: 1 / -1;
+  margin-inline: -24px;
+  padding-block: 36px;
 }
 
 .card-list {
@@ -169,6 +184,21 @@ body {
   margin-top: 24px;
   height: 40px;
   align-self: end;
+}
+
+.btn {
+  background-color: var(--color-2);
+  color: var(--text-color);
+  border-radius: 8px;
+  width: fit-content;
+  border: none;
+  padding: 0.45rem 1rem;
+  font-size: 1rem;
+  transition: background 300ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--background-color);
 }
 
 .search {
@@ -326,6 +356,77 @@ body {
   align-items: center;
 }
 
+/* Login */
+
+.login-layout {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+  padding-top: calc(var(--nav-size) + var(--spacing-size));
+}
+
+.login-container {
+  display: grid;
+  gap: 16px;
+  max-width: 400px;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  color: var(--header-footer-color);
+}
+
+.login-container h1 {
+  color: var(--header-footer-color);
+}
+
+.login-form {
+  display: grid;
+  gap: 16px;
+}
+
+.login-form label {
+  display: grid;
+  gap: 4px;
+  color: var(--header-footer-color);
+}
+
+.login-form input {
+  min-width: 300px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: inherit;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+
+.login-form .btn {
+  width: unset;
+  padding-block: 0.8rem;
+}
+
+.btn-google {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: var(--header-footer-color);
+  transition: color 300ms ease-in-out;
+}
+
+.btn-google:hover {
+  color: var(--text-hover);
+  border: 1px solid currentColor;
+}
+
+.btn-google i {
+  color: inherit;
+}
 /* jogo-page */
 
 .jogo-page {
@@ -434,7 +535,7 @@ button:hover {
 /* Responsive */
 
 @media (max-width: 450px) {
-  .layout {
+  :is(.layout, .login-layout) {
     --nav-size: 190px;
   }
 }
@@ -446,10 +547,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  .layout {
-    padding-inline: 24px;
-  }
-
   .banner {
     grid-template-columns: repeat(2, 1fr);
   }
