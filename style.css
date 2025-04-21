@@ -5,7 +5,7 @@
   --text-color: #e2f4f0;
   --header-footer-color: #092011;
   --text-hover: #ea8c84;
-  --search-color: #5d9e7b;
+  --search-color: #2d4d3c;
   --ligh-blue-color: #77daf3;
   --color-1: #69a1c2;
   --color-2: #2b5328;
@@ -13,7 +13,7 @@
   --secondary-font: "Gidole", sans-serif;
 
   --nav-size: 80px;
-  --spacing-size: 80px;
+  --spacing-size: 40px;
 
   font-family: var(--primary-font);
 }
@@ -60,6 +60,13 @@ body {
   width: 100%;
   background-color: var(--header-footer-color);
   padding: 16px 32px;
+  z-index: 2;
+}
+
+.nav-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .logo {
@@ -93,11 +100,15 @@ body {
 
   display: grid;
   grid-template-columns: 1fr min(var(--cap-inline-size), 100%) 1fr;
-  row-gap: 16px;
+  row-gap: var(--list-gap, 16px);
   justify-content: center;
   padding-inline: 24px;
   padding-top: calc(var(--nav-size) + var(--spacing-size));
   color: var(--text-color);
+}
+
+.layout--list {
+  --list-gap: 0;
 }
 
 .layout > * {
@@ -130,7 +141,8 @@ body {
 .releases {
   display: grid;
   gap: 24px;
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-inline: 24px;
 }
 
 .releases > h2 {
@@ -184,6 +196,8 @@ body {
   margin-top: 24px;
   height: 40px;
   align-self: end;
+  display: flex;
+  align-items: center;
 }
 
 .btn {
@@ -201,20 +215,35 @@ body {
   background-color: var(--background-color);
 }
 
+.search-banner {
+  background-image: url(./assets/img/ekorella_vol1.png);
+  grid-column: 1 / -1;
+  margin-inline: -24px;
+  height: 300px;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  margin-top: -43px;
+}
+
 .search {
-  --nav-size: 152px;
   display: flex;
   align-items: center;
   border: 2px solid var(--header-footer-color);
   background-color: var(--search-color);
+  margin-inline: auto;
   width: 30%;
   min-width: 300px;
   height: 60px;
-  margin: calc(35px + var(--nav-size)) auto 38px;
   padding: 30px 15px 30px 30px;
   border-radius: 50px;
   gap: 15px;
-  /* box-shadow: rgba(0, 0, 0, 0.548) 0px 0px 10px 2px; */
+  transform: translateY(50%)
+}
+
+.search:focus-within {
+  outline: 2px solid var(--ligh-blue-color);
 }
 
 .search button {
@@ -238,70 +267,6 @@ body {
 
 #search::placeholder {
   color: var(--text-color);
-}
-
-.hero {
-  margin: 0 auto;
-  width: 70%;
-  border-radius: 20px;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-block: 38px;
-  background-color: var(--color-2);
-}
-
-.main-container h2 {
-  font-size: 2rem;
-  margin: 30px auto 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.news-container,
-.sale-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding-inline: 32px;
-  gap: 32px;
-  margin: 20px 0;
-}
-
-.game-card {
-  width: 30%;
-  min-height: 360px;
-  min-width: 250px;
-  box-shadow: rgba(0, 0, 0, 0.315) 0px 0px 15px 2px;
-  padding: 15px;
-  border-radius: 20px;
-}
-
-.game-card:hover {
-  box-shadow: var(--ligh-blue-color) 0px 0px 5px 2px;
-  background-color: transparent;
-}
-
-.game-img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.game-title {
-  font-size: 2rem;
-  margin: 8px 0 16px -1px;
-}
-
-.game-gender {
-  font-size: 1.2rem;
-
-  color: #e2f4f07c;
-}
-
-.game-price {
-  font-size: 1.2rem;
 }
 
 .footer {
