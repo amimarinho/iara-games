@@ -22,24 +22,24 @@
     <title>Enigma do Medo</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <nav role="navigation" class="nav">
+      <a href="./index.html" class="nav-logo">
         <img
           class="logo"
-          src="./logo/Iara Games Logo V0 (IA).png"
-          alt="imagem logotipo"
+          src="./logo/logo-iara-games-60x60.png"
+          alt="Iara Games, atualizar página"
+          height="45"
+          width="45"
         />
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li>
-            <a href="./index.html#ultimos-lancamentos">Últimos Lançamentos</a>
-          </li>
-          <li>
-            <a href="./index.html#ofertas-imperdiveis">ofertas Imperdíveis </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <h1 class="heading">Iara Games</h1>
+      </a>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#lancamentos">Lançamentos</a></li>
+        <li><a href="./index.html#ofertas">Ofertas</a></li>
+        <li class="btn"><a href="./login.html">Criar conta</a></li>
+      </ul>
+    </nav>
     <main class="jogo-page">
       <header class="jogo-page-header">
         <h2>Enigma do Medo</h2>
@@ -90,15 +90,22 @@
         <button>Adicionar ao carrinho</button>
       </div>
     </main>
-    <footer>
-      <img
-        class="logo-footer"
-        src="./logo/Iara Games Logo V0 (IA).png"
-        alt="imagem logotipo"
-      />
+    <footer class="footer">
+      <address class="footer-info">
+        <a href="#">
+          <img
+            class="footer-logo"
+            src="./logo/logo-iara-games-60x60.png"
+            alt="Iara Games - voltar para o topo"
+          />
+        </a>
+        <small>Iara Games - Jogos digitais</small>
+        <small>Brasil - BR</small>
+        <small>CNPJ: 25.815.481/0001-14</small>
+      </address>
       <div class="footer-menu">
-        <h2>Jogos</h2>
-        <ul>
+        <p><strong>Jogos</strong></p>
+        <ul class="footer-list">
           <li><a href="./jogo-page.html">Enigma do Medo</a></li>
           <li><a href="./jogo-page.html">Adore</a></li>
           <li><a href="./jogo-page.html">Irmão do Jorel</a></li>
@@ -106,6 +113,26 @@
           <li><a href="./jogo-page.html">Mark of the deep</a></li>
           <li><a href="./jogo-page.html">Akane</a></li>
           <li><a href="./jogo-page.html">Redo</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <p><strong>Redes sociais</strong></p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="" aria-label="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" aria-label="youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="" aria-label="facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
