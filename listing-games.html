@@ -44,7 +44,19 @@
       </ul>
     </nav>
     <main class="layout layout--list">
-      <div class="search-banner">
+      <header class="search-banner">
+        <div class="search-container">
+          <img
+            src="./assets/img/joystick.png"
+            alt=""
+            role="presentation"
+            aria-disabled="true"
+            class="search-banner-img"
+          />
+          <h2 class="search-title">
+            Encontre aqui sua nova aventura favorita
+          </h2>
+        </div>
         <form class="search" action="">
           <label for="search">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -57,9 +69,11 @@
           />
           <button>Buscar</button>
         </form>
-      </div>
-      <section id="lancamentos" class="releases bg-dark" style="margin-top: 0">
-        <h2 style="margin-top: 80px">Últimos Lançamentos</h2>
+      </header>
+      <section id="lancamentos" class="releases" style="margin-top: 0">
+        <h2 class="releases-heading decorated-heading" style="margin-top: 80px">
+          Últimos Lançamentos
+        </h2>
         <ul class="card-list">
           <li class="card-list-item">
             <img
@@ -132,11 +146,36 @@
               Conhecer jogo &rarr;
             </a>
           </li>
+          <li class="card-list-item">
+            <img src="./assets/img/redo.jpg" alt="jogo redo" />
+            <h3>Redo</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
         </ul>
       </section>
       <section class="releases" id="ofertas">
         <h2>Ofertas imperdíveis</h2>
         <ul class="card-list">
+          <li class="card-list-item">
+            <img src="./assets/img/dandy_ace.jpg" alt="jogo Dandy Ace" />
+            <h3>Dandy Ace</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
           <li class="card-list-item">
             <img src="./assets/img/akane.jpg" alt="jogo Akane" />
             <h3 class="game-title">Akane</h3>
@@ -208,6 +247,7 @@
           </li>
         </ul>
       </div>
+      <img src="./assets/img/bushes.png" alt="" class="footer-img" />
     </footer>
   </body>
 </html>
