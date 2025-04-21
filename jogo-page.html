@@ -34,24 +34,37 @@
         <h1 class="heading">Iara Games</h1>
       </a>
       <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#lancamentos">Lançamentos</a></li>
-        <li><a href="./index.html#ofertas">Ofertas</a></li>
-        <li class="btn"><a href="./login.html">Criar conta</a></li>
+        <li><a class="menu-link" href="./index.html">Home</a></li>
+        <li>
+          <a class="menu-link" href="./index.html#lancamentos">Lançamentos</a>
+        </li>
+        <li><a class="menu-link" href="./index.html#ofertas">Ofertas</a></li>
+        <li class="btn-menu decorated-btn">
+          <a href="./login.html">Criar conta</a>
+        </li>
       </ul>
     </nav>
-    <main class="jogo-page">
-      <header class="jogo-page-header">
-        <h2>Enigma do Medo</h2>
-        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+    <main class="layout">
+      <header class="game-header">
+        <h2 class="heading decorated-heading">Enigma do Medo</h2>
+        <p class="game-header-review">
+          <strong>Review:</strong>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          &nbsp;
+          <small>(340 avaliações)</small>
+        </p>
       </header>
-      <div class="container-jogo">
+      <div class="game-container">
         <img
           src="./assets/img/enigma_do_medo.jpg"
           alt="imagem enigma do medo"
-          class="game-img-page"
+          class="game-img"
         />
-        <div class="game-info-page">
+        <div class="game-info">
           <p class="game-info-page-desc">
             Mia, uma detetive paranormal, busca seu pai desaparecido, que sumiu
             enquanto investigava o Enigma do Medo. Em uma cidade sombria, ela
@@ -59,35 +72,32 @@
             A cada passo, o mistério se aprofunda e a presença de algo maligno a
             persegue. Ela encontrará seu pai ou será consumida pela escuridão?
           </p>
+          <p class="genre-list">
+            <span class="genre-list-item"> Ação e Aventura, </span>
+            <span class="genre-list-item"> RPG,</span>
+            <span class="genre-list-item"> Sci-fi </span>
+          </p>
           <dl class="topics">
             <dt>Ultimas Avaliações:</dt>
             <dd>230</dd>
-          </dl>
+            <hr />
 
-          <dl class="topics">
             <dt>Plataforma:</dt>
             <dd>Windows</dd>
-          </dl>
+            <hr />
 
-          <dl class="topics">
             <dt>Data de lançamento:</dt>
             <dd>15/01/2025</dd>
-          </dl>
+            <hr />
 
-          <dl class="topics">
             <dt>Desenvolvedor:</dt>
             <dd>Ubisoft</dd>
           </dl>
-          <p>
-            <span class="game-gender"> Ação e Aventura, </span>
-            <span class="game-gender"> RPG,</span>
-            <span class="game-gender"> Sci-fi </span>
-          </p>
         </div>
       </div>
-      <div class="container2">
-        <button>Comprar Agora</button>
-        <button>Adicionar ao carrinho</button>
+      <div class="game-container">
+        <button class="btn-secondary decorated-btn">Comprar Agora</button>
+        <button class="btn-cart">Adicionar ao carrinho</button>
       </div>
     </main>
     <footer class="footer">
@@ -135,6 +145,7 @@
           </li>
         </ul>
       </div>
+      <img src="./assets/img/bushes.png" alt="" class="footer-img" />
     </footer>
   </body>
 </html>

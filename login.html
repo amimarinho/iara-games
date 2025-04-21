@@ -22,7 +22,7 @@
 
   <body>
     <nav role="navigation" class="nav">
-      <a href="./index.html">
+      <a href="./index.html" class="nav-logo">
         <img
           class="logo"
           src="./logo/logo-iara-games-60x60.png"
@@ -30,12 +30,17 @@
           height="45"
           width="45"
         />
+        <h1 class="heading">Iara Games</h1>
       </a>
       <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#lancamentos">Lançamentos</a></li>
-        <li><a href="./index.html#ofertas">Ofertas</a></li>
-        <li class="btn"><a href="./login.html">Criar conta</a></li>
+        <li><a class="menu-link" href="./index.html">Home</a></li>
+        <li>
+          <a class="menu-link" href="./index.html#lancamentos">Lançamentos</a>
+        </li>
+        <li><a class="menu-link" href="./index.html#ofertas">Ofertas</a></li>
+        <li class="btn-menu decorated-btn">
+          <a href="./login.html">Criar conta</a>
+        </li>
       </ul>
     </nav>
     <main class="login-layout">
@@ -54,7 +59,7 @@
             Senha
             <input type="password" name="name" id="" />
           </label>
-          <button class="btn">Criar conta</button>
+          <button class="login-form-btn decorated-btn">Criar conta</button>
         </form>
         <button class="btn-google">
           <i class="fa-brands fa-google"></i> Entrar com conta google
@@ -106,6 +111,7 @@
           </li>
         </ul>
       </div>
+      <img src="./assets/img/bushes.png" alt="" class="footer-img" />
     </footer>
   </body>
 </html>
