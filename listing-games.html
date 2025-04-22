@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Iara Games - A Maior plataforma de jogos brasileiros</title>
+    <title>Iara</title>
   </head>
 
   <body>
@@ -43,48 +43,42 @@
         </li>
       </ul>
     </nav>
-    <main class="layout">
-      <header class="banner">
-        <div class="banner-stepper">
-          <a href="" class="banner-link">
-            <img
-              src="./assets/img/enigma-do-medo.webp"
-              alt="jogo enigma do medo"
-              class="banner-img"
-            />
-          </a>
-          <div class="steps">
-            <span class="steps-step"></span>
-            <span class="steps-step"></span>
-            <span class="steps-step"></span>
-            <span class="steps-step active"></span>
-          </div>
+    <main class="layout layout--list">
+      <header class="search-banner">
+        <div class="search-container">
+          <img
+            src="./assets/img/joystick.png"
+            alt=""
+            role="presentation"
+            aria-disabled="true"
+            class="search-banner-img"
+          />
+          <h2 class="search-title">
+            Encontre aqui sua nova aventura favorita
+          </h2>
         </div>
-        <a href="#" class="banner-link">
-          <img
-            src="./assets/img/enigma-1.png"
-            alt="jogo enigma do medo"
-            class="banner-img"
+        <form class="search" action="">
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Pesquisar"
           />
-        </a>
-        <a href="#" class="banner-link">
-          <img src="./assets/img/enigma-2.jpg" alt="" class="banner-img" />
-        </a>
-        <a href="#" class="banner-link">
-          <img
-            src="./assets/img/enigma-3.jpg"
-            alt="jogo engima do medo"
-            class="banner-img"
-          />
-        </a>
+          <button>Buscar</button>
+        </form>
       </header>
-      <section class="releases bg-dark" id="lancamentos">
-        <h2 class="decorated-heading">Explore e descubra novos mundos</h2>
+      <section id="lancamentos" class="releases" style="margin-top: 0">
+        <h2 class="releases-heading decorated-heading" style="margin-top: 80px">
+          Últimos Lançamentos
+        </h2>
         <ul class="card-list">
           <li class="card-list-item">
             <img
-              src="./assets/img/irmao-do-jorel-e-o-jogo-mais-importante.jpg"
-              alt=""
+              src="./assets/img/enigma_do_medo.jpg"
+              alt="jogo Enigma Do Medo"
             />
             <h3>Irmão do Jorel e o Jogo mais importante da galáxia</h3>
             <p class="genre-list">
@@ -92,147 +86,121 @@
               <span class="genre-list-item"> Aventura </span>
               <span class="genre-list-item"> Indie </span>
             </p>
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
           </li>
           <li class="card-list-item">
-            <img src="./assets/img/adore.jpg" alt="" />
+            <img src="./assets/img/adore.jpg" alt="jogo Adore" />
             <h3>Adore</h3>
             <p class="genre-list">
               <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Indie </span>
+              <span class="genre-list-item"> RPG </span>
+            </p>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
+          <li class="card-list-item">
+            <img
+              class="game-img"
+              src="./assets/img/irmao_do_jorel.jpg"
+              alt="jogo Irmão do Jorel e o Jogo Mais Importante da Galáxia"
+            />
+            <h3>Irmão do Jorel e o Jogo Mais Importante da Galáxia</h3>
+            <p class="genre-list">
               <span class="genre-list-item"> Aventura </span>
               <span class="genre-list-item"> Indie </span>
             </p>
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
+            <p class="game-gender">Gênero: Aventura, Indie</p>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
           </li>
           <li class="card-list-item">
-            <img src="./assets/img/dandy_ace.jpg" alt="" />
+            <img src="./assets/img/dandy_ace.jpg" alt="jogo Dandy Ace" />
             <h3>Dandy Ace</h3>
             <p class="genre-list">
               <span class="genre-list-item"> Ação </span>
-              <span class="genre-list-item"> Aventura </span>
               <span class="genre-list-item"> Indie </span>
             </p>
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="explore">
-        <img
-          src="./assets/img/games-list.png"
-          role="presentation"
-          alt=""
-          aria-disabled="true"
-          class="explore-img"
-        />
-        <div>
-          <h2 class="explore-heading">
-            Conheça nossa seleção de grandes títulos indies brasileiros!
-          </h2>
-          <a href="./listing-games.html" class="btn-cart">Conheça</a>
-        </div>
-      </section>
-      <section class="releases" id="ofertas">
-        <h2 class="decorated-heading">&nbsp;Ofertas Imperdíveis&nbsp;</h2>
-        <ul class="card-list">
-          <li class="card-list-item">
-            <img src="./assets/img/redo.jpg" alt="" />
-            <h3>Redo</h3>
-            <p class="genre-list">
-              <span class="genre-list-item"> Ação </span>
-              <span class="genre-list-item"> Aventura </span>
-            </p>
 
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
           </li>
           <li class="card-list-item">
-            <img src="./assets/img/mark_of_the_deep.jpg" alt="" />
+            <img
+              src="./assets/img/mark_of_the_deep.jpg"
+              alt="jogo Mark of the deep"
+            />
             <h3>Mark of the deep</h3>
             <p class="genre-list">
               <span class="genre-list-item"> Ação </span>
               <span class="genre-list-item"> Aventura </span>
               <span class="genre-list-item"> Indie </span>
             </p>
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
+
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
           </li>
           <li class="card-list-item">
-            <img src="./assets/img/ekorella_vol1.png" alt="" />
-            <h3>Ekorella</h3>
+            <img src="./assets/img/redo.jpg" alt="jogo redo" />
+            <h3>Redo</h3>
             <p class="genre-list">
               <span class="genre-list-item"> Ação </span>
               <span class="genre-list-item"> Aventura </span>
               <span class="genre-list-item"> Indie </span>
             </p>
-            <div class="card-controls">
-              <button class="btn-cart">
-                R$ 49,90
-                <i
-                  aria-label="adicionar ao carrinho"
-                  class="fa-solid fa-cart-plus"
-                ></i>
-              </button>
-              <a href="./jogo-page.html" class="card-link"
-                >Ver jogo<i class="fa-solid fa-arrow-right"></i
-              ></a>
-            </div>
+
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
           </li>
         </ul>
       </section>
-      <section class="releases"></section>
+      <section class="releases" id="ofertas">
+        <h2>Ofertas imperdíveis</h2>
+        <ul class="card-list">
+          <li class="card-list-item">
+            <img src="./assets/img/dandy_ace.jpg" alt="jogo Dandy Ace" />
+            <h3>Dandy Ace</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
+          <li class="card-list-item">
+            <img src="./assets/img/akane.jpg" alt="jogo Akane" />
+            <h3 class="game-title">Akane</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Casual </span>
+              <span class="genre-list-item"> Indie </span>
+            </p>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
+          <li class="card-list-item">
+            <img src="./assets/img/redo.jpg" alt="jogo redo" />
+            <h3>Redo</h3>
+            <p class="genre-list">
+              <span class="genre-list-item"> Ação </span>
+              <span class="genre-list-item"> Aventura </span>
+            </p>
+            <a class="btn-cart" href="./jogo-page.html">
+              Conhecer jogo &rarr;
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
       <address class="footer-info">
