@@ -31,7 +31,7 @@
   --font-nunito: "Nunito", sans-serif;
   --font-gidole: "Gidole", sans-serif;
 
-  --nav-size: 80px;
+  --nav-size: 43px;
   --spacing-size: 40px;
 
   font-family: var(--font-gidole);
@@ -164,7 +164,7 @@ body {
   row-gap: var(--list-gap, 16px);
   justify-content: center;
   padding-inline: 24px;
-  padding-top: calc(var(--nav-size) + var(--spacing-size));
+  padding-top: calc(var(--nav-size));
   color: var(--text-color);
 }
 
