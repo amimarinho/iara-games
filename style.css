@@ -141,6 +141,7 @@ body {
   border: none;
   padding: 0.45rem 1rem;
   font-size: 1rem;
+  font-family: var(--font-gidole);
   position: relative;
 }
 
