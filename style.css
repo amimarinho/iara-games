@@ -746,7 +746,7 @@ body {
 /* Utilities */
 
 .heading {
-  font: 600 2rem var(--font-gidole);
+  font: 600 1.75rem var(--font-gidole);
 }
 
 .bg-dark {
