@@ -109,6 +109,7 @@ body {
 
 .menu-link {
   position: relative;
+  font-family: var(--font-gidole);
 }
 
 .menu-link::before {
