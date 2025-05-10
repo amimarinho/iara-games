@@ -155,6 +155,9 @@ body {
   background-color: var(--color-secondary);
 }
 
+.btn-menu.btn-active{
+  background-color: var(--color-secondary);
+}
 .menu ul {
   display: flex;
   gap: 3rem;
