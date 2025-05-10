@@ -293,7 +293,7 @@ body {
   z-index: 1;
 }
 
-.releases.bg-dark {
+.releases.bg-dark1 {
   grid-column: 1 / -1;
   margin-inline: -24px;
   padding-block: 36px;
@@ -752,7 +752,7 @@ body {
   font: 600 2rem var(--font-gidole);
 }
 
-.bg-dark {
+.bg-dark1 {
   background-color: var(--header-footer-color);
 }
 
