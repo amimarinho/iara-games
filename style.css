@@ -78,10 +78,22 @@ body {
 
 /* Navbar */
 
+.navbar{
+  background-color: var(--color-primary);
+}
+
 .nav-logo {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+.nav-link{
+  color: var(--color-background);
+}
+
+.nav-link:hover{
+  color: var(--color-primary-hover);
 }
 
 .logo {
@@ -121,6 +133,10 @@ body {
   --link-scale: 1;
 }
 
+.menu-link.active::before {
+  --link-scale: 1; /* Faz a linha inferior aparecer na classe .active */
+}
+
 .btn-menu {
   background-color: var(--color-background);
   border-radius: 8px;
@@ -128,6 +144,7 @@ body {
   width: fit-content;
   border: none;
   padding: 0.45rem 1rem;
+  margin-left: 60px;
   font-size: 1rem;
   font-family: var(--font-gidole);
   font-weight: 600;
@@ -800,6 +817,18 @@ body {
   .banner-stepper {
     grid-row: unset;
     grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 992px) { /* Ajuste o valor conforme o breakpoint do Bootstrap */
+  .btn-menu {
+    display: block; /* Garante que o botão seja exibido */
+    margin: 1rem auto; /* Centraliza o botão */
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    text-align: center; /* Centraliza o conteúdo do menu */
   }
 }
 
