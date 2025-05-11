@@ -78,17 +78,11 @@ body {
 
 /* Navbar */
 
-.navbar{
+.navbar {
   background-color: var(--color-primary);
 }
 
-.nav-logo {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.nav-link{
+.nav-link {
   color: var(--color-background);
 }
 
