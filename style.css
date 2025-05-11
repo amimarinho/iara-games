@@ -318,6 +318,24 @@ body {
   border-radius: 8px;
 }
 
+/* Remove o font-size errado do h3 */
+.card-list-item > h3 {
+  font: 800 1.2rem var(--font-gidole);
+}
+
+/* Remove as margens incorretas das fontes e listas*/
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+:is(p, h1, h2, h3) {
+  margin: 0;
+  padding: 0;
+}
+
+
 .card-list-item > img {
   max-height: 140px;
   width: 100%;
