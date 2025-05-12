@@ -72,7 +72,7 @@
         <img
           src="./assets/img/enigma_do_medo.jpg"
           alt="imagem enigma do medo"
-          class="game-img"
+          class="game-img" data-bs-toggle="modal" data-bs-target="#gamedetail"
         />
         <div class="game-info">
           <p class="game-info-page-desc">
@@ -105,6 +105,18 @@
           </dl>
         </div>
       </div>
+      <div class="modal" tabindex="-1" id="gamedetail">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                src="./assets/img/enigma_do_medo.jpg"
+                alt="imagem enigma do medo"
+                class="modal-gamedetail"                
+              />
+            </div>            
+          </div>
+        </div>
       <div class="game-container">
         <button class="btn-secondary decorated-btn">Comprar Agora</button>
         <button class="btn-cart">Adicionar ao carrinho</button>

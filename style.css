@@ -276,6 +276,13 @@ body {
   padding: 0;
 }
 
+.modal-gamedetail {
+  width: 100%;
+}
+
+.carousel-item {
+  max-height: 100%
+}
 .banner.modal img {
   width: 80%;
 }
