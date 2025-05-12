@@ -367,7 +367,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
   margin-top: 24px;
+}
+
+.card-controls > * {
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .card-link {
