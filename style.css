@@ -368,6 +368,13 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-controls > * {
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .card-link {
