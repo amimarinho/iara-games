@@ -28,7 +28,7 @@
   --ligh-blue-color: #77daf3;
   --color-1: #69a1c2;
   --color-2: #2b5328; */
-  --font-nunito: "Nunito", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
   --font-gidole: "Gidole", sans-serif;
 
   --nav-size: 43px;
@@ -355,6 +355,12 @@ ul, ol {
   padding: 0;
 }
 
+:is(p, strong, small,button, .genre-list-item,.card-link) {
+  font-family: var(--font-nunito);
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   font-size: 1.5rem;
   font-family: var(--font-gidole);
@@ -560,6 +566,7 @@ h2 {
 }
 
 .footer {
+  font-family: var(--font-nunito);
   display: flex;
   flex-wrap: wrap;
   align-items: start;
@@ -595,6 +602,11 @@ h2 {
   flex-grow: 1;
   gap: 1rem;
   width: fit-content;
+}
+
+.footer-menu h2 {
+  font-family: var(--font-gidole);
+  font-size: 1rem;
 }
 
 .footer-menu:nth-child(3) {
@@ -742,7 +754,7 @@ h2 {
   gap: 16px;
   width: 33%;
   min-width: 300px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-text);
 }
 
