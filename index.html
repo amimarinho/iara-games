@@ -27,6 +27,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <script src="./js/script.js" defer></script>
+
     <title>Iara Games - A Maior plataforma de jogos brasileiros</title>
   </head>
 
@@ -78,133 +80,98 @@
       </div>
     </nav>
     <main class="layout">
-      <header class="banner">
-        <div class="banner-stepper">
-          <a
-            href="#"
-            class="banner-link"
-            data-bs-toggle="modal"
-            data-bs-target="#hero1modal"
-          >
-            <img
-              src="./assets/img/enigma-do-medo.webp"
-              alt="Capa do jogo Enigma do Medo"
-              class="banner-img"
-            />
-          </a>
-          <div class="steps">
-            <span class="steps-step"></span>
-            <span class="steps-step"></span>
-            <span class="steps-step"></span>
-            <span class="steps-step active"></span>
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-        </div>
-        <a
-          href="#"
-          class="banner-link"
-          data-bs-toggle="modal"
-          data-bs-target="#hero1modal"
-        >
-          <img
-            src="./assets/img/enigma-1.png"
-            alt="Cena do jogo Enigma do Medo"
-            class="banner-img"
-          />
-        </a>
-        <a
-          href="#"
-          class="banner-link"
-          data-bs-toggle="modal"
-          data-bs-target="#hero1modal"
-        >
-          <img
-            src="./assets/img/enigma-2.jpg"
-            alt="Cena do jogo Enigma do Medo"
-            class="banner-img"
-          />
-        </a>
-        <a
-          href="#"
-          class="banner-link"
-          data-bs-toggle="modal"
-          data-bs-target="#hero1modal"
-        >
-          <img
-            src="./assets/img/enigma-3.jpg"
-            alt="Cena do jogo Enigma do Medo"
-            class="banner-img"
-          />
-        </a>
-        <!-- MODAL hero1-->
-        <div
-          class="modal fade"
-          id="hero1modal"
-          tabindex="-1"
-          aria-labelledby="meuModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div id="carouselExampleFade" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        class="d-block"
-                        src="./assets/img/enigma-do-medo.webp"
-                        alt="jogo enigma do medo"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        class="d-block w-100"
-                        src="./assets/img/enigma-1.png"
-                        alt="jogo enigma do medo"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        class="d-block w-100"
-                        src="./assets/img/enigma-2.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        class="d-block w-100"
-                        src="./assets/img/enigma-3.jpg"
-                        alt="jogo engima do medo"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture class="carousel-picture">
+                <source
+                  srcset="./assets/img/mark-of-the-deep-mob.png"
+                  media="(max-width: 420px)"
+                />
+                <source
+                  srcset="./assets/img/mark-of-the-deep-banner.png"
+                  media="(min-width: 421px)"
+                />
+                <img
+                  src="./assets/img/mark-of-the-deep-mob.png"
+                  alt="jogo mark-of-the-deep-banner"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture class="carousel-picture">
+                <source
+                  srcset="./assets/img/akane-banner-333x500.png"
+                  media="(max-width: 420px)"
+                />
+                <source
+                  srcset="./assets/img/akane-banner.png"
+                  media="(min-width: 421px)"
+                />
+                <img
+                  src="./assets/img/akane-banner-333x500.png"
+                  alt="jogo akane banner"
+                />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture class="carousel-picture">
+                <source
+                  srcset="./assets/img/dandyace-mob.jpeg"
+                  media="(max-width: 420px)"
+                />
+                <source
+                  src="./assets/img/dandy-ace-1280x720.png"
+                  media="(min-width: 421px)"
+                />
+                <img
+                  src="./assets/img/dandy-ace-1280x720.png"
+                  alt="jogo dandy ace banner"
+                />
+              </picture>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </header>
       <section class="releases bg-dark1" id="lancamentos">
@@ -212,7 +179,7 @@
         <ul class="card-list">
           <li class="card-list-item">
             <img
-              src="./assets/img/irmao-do-jorel-e-o-jogo-mais-importante.jpg"
+              src="./assets/img/irmao-do-jorel-e-o-jogo-mais-importante-da-galaxia-banner.jpg"
               alt="Capa do jogo Irmão do Jorel e o Jogo mais importante da galáxia"
             />
             <h3>Irmão do Jorel e o Jogo mais importante da galáxia</h3>
@@ -425,6 +392,26 @@
         aria-hidden="true"
       />
     </footer>
-  <script src="./js/script.js" defer></script>
+    <div
+      class="toast-container position-fixed top-50 end-0 translate-middle-y p-3"
+    >
+      <div
+        id="liveToast"
+        class="toast align-items-center bg-indigo-500 border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Adicionado ao carrinho</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

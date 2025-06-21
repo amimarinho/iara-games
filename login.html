@@ -82,23 +82,30 @@
     <main class="login-layout">
       <div class="login-container">
         <h1>Criar conta</h1>
-        <form action="" class="login-form" id="registrationForm">
-          <label for="nameInput">
-            Nome
-            <input type="text" name="name" id="nameInput" />
-          </label>
-          <div class="error-message" id="nameError"></div>
-          <label for="emailInput">
-            Email
-            <input type="email" name="email" id="emailInput" />
-          </label>
-          <div class="error-message" id="emailError"></div>
-          <label for="passwordInput">
-            Senha
-            <input type="password" name="password" id="passwordInput" />
-          </label>
-          <div class="error-message" id="passwordError"></div>
-          <div id="formFeedback" class="form-feedback-message"></div>
+        <form
+          action=""
+          class="login-form needs-validation"
+          novalidate
+          id="registrationForm"
+        >
+          <div>
+            <label for="nameInput" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nameInput" required />
+            <div class="invalid-feedback">Preencha um nome</div>
+          </div>
+
+          <div>
+            <label for="emailInput" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailInput" required />
+            <div class="invalid-feedback">Preencha seu e-mail</div>
+          </div>
+
+          <div>
+            <label for="passwordInput" class="form-label">Senha</label>
+            <input type="password" minlength="6" class="form-control" id="passwordInput" required />
+            <div class="invalid-feedback">Senha deve conter pelo menos 6 caracteres</div>
+          </div>
+
           <button class="login-form-btn decorated-btn">Criar conta</button>
         </form>
         <button class="btn-google">
@@ -106,7 +113,7 @@
         </button>
       </div>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <address class="footer-info">
         <a href="#">
           <img
@@ -159,6 +166,6 @@
         aria-hidden="true"
       />
     </footer>
-  <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
